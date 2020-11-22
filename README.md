@@ -1,5 +1,6 @@
 # # nodeJS-jwt-auth-sequalize-mysql
 
+@ donation :D
 `/api/auth/signup`
 
 ```
