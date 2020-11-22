@@ -1,5 +1,37 @@
 # # nodeJS-jwt-auth-sequalize-mysql
 
+`/api/auth/signup`
+
+```
+raw json
+{
+    "username": "yogiarifwidodo",
+    "email": "yogiarifwidodo@yogi.com",
+    "password": "yogi",
+    "roles": [
+        "moderator",
+        "user"
+    ]
+}
+```
+
+`/api/auth/signin`
+
+```
+raw json
+{
+    "username": "user",
+    "password": "yogi"
+}
+```
+
+`/api/test/all` public access
+`/api/test/user` user access
+`/api/test/mod` moderator access
+`/api/test/admin` admin access
+
+`x-access-token :` `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjA2MDE1NjU5LCJleHAiOjE2MDYxMDIwNTl9.pUya-Wqm8sVmadkxfGvYL7N0Y3d-18dT3IaZtSLUMS4`
+
 ```
 [Service]
 ExecStart=/usr/bin/node /var/www/html/api/nodejs/api-doa-nodeJS-express-mysql/server.js
