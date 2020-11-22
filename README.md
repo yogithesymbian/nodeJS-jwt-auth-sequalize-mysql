@@ -20,7 +20,7 @@ raw json
 ```
 raw json
 {
-    "username": "user",
+    "username": "yogiarifwidodo",
     "password": "yogi"
 }
 ```
