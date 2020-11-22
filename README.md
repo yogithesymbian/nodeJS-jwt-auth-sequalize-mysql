@@ -117,3 +117,6 @@ git push heroku master
 -----> Launching... done
        http://arcane-lowlands-8408.herokuapp.com deployed to Heroku
 ```
+
+- Yogi Arif Widodo
+- @yogithesymbian
