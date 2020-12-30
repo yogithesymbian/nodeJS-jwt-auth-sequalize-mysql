@@ -34,23 +34,22 @@ raw json
 `x-access-token :` `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjA2MDE1NjU5LCJleHAiOjE2MDYxMDIwNTl9.pUya-Wqm8sVmadkxfGvYL7N0Y3d-18dT3IaZtSLUMS4`
 
 ```
+#/etc/systemd/system/node-app-1.service
+
+Description = node-app-1.service
+After network.target = node-app-1.service
+
 [Service]
-ExecStart=/usr/bin/node /var/www/html/api/nodejs/api-doa-nodeJS-express-mysql/server.js
-
-Restart=always
-
+ExecStart=/usr/local/bin/node /var/www/html/api/nodejs/api-doa-nodeJS-express-mysql/server.js
+Restart=on-failure
 StandardOutput=syslog
-
 StandardError=syslog
 
 SyslogIdentifier=node-app-1
-
 User=nobody
-
 Group=root
 
-Environment=NODE_ENV=production PORT=5000
-
+Environment=NODE_ENV=production PORT=3000
 WorkingDirectory=/var/www/html/api/nodejs/api-doa-nodeJS-express-mysql
 
 [Install]
