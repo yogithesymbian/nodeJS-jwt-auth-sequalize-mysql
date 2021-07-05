@@ -32,7 +32,7 @@ exports.signup = (req, res) => {
             response.ok(res, "User was registered successfully!", resData);
           });
         });
-      } else {
+      } else { // default role if request doesn't have set the data
         // user role = 1
         user.setRoles([0]).then(() => {
           const resData = {

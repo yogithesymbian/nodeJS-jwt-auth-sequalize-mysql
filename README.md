@@ -119,3 +119,11 @@ git push heroku master
 
 - Yogi Arif Widodo
 - @yogithesymbian
+
+
+---
+
+modification guide
+1. make a model, and register the model into `/app/models/index.js`.
+2. create a controller (for consuming in routes on laters).
+3. create routes in `/app/routes` and register the routes in `/server.js` .
