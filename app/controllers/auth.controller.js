@@ -34,7 +34,7 @@ exports.signup = (req, res) => {
         });
       } else { // default role if request doesn't have set the data
         // user role = 1
-        user.setRoles([0]).then(() => {
+        user.setRoles([1]).then(() => {
           const resData = {
             user: user,
           };
